@@ -1,0 +1,30 @@
+berlin:
+  address: "Berlin"
+  rating: 5
+  full: true
+  description: "24/7 Fun"
+paris:
+  address: "Paris"
+  rating: 5
+  full: false
+  description: "Full of frenchies"
+amsterdam:
+  address: "Amsterdam"
+  rating: 5
+  full: false
+  description: "Full of dutchies"
+barcelona:
+  address: "Barcelona"
+  rating: 5
+  full: false
+  description: "Full of hippies"
+tokyo:
+  address: "Tokyo"
+  rating: 5
+  full: false
+  description: "Full of Asians"
+rio:
+  address: "Rio"
+  rating: 5
+  full: false
+  description: "Samba"
