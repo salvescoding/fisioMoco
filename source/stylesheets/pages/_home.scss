@@ -1,11 +1,12 @@
-#home {
-  background-color: #D23333;
+.banner {
   color: white;
+  text-align: center;
   height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  text-align: center;
+  justify-content: center;
   p {
     margin-top: 1.5em;
   }
@@ -14,4 +15,12 @@
     font-weight: bold;
     font-size: 16px;
   }
+}
+
+.image-background img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: auto;
+  height: auto;
 }

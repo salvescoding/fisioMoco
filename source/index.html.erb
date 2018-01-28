@@ -1,48 +1,5 @@
----
-title: Le Wagon - Middleman
----
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/berlin');">
-  <div class="banner-content">
-    <h1>Welcome to middleman</h1>
-    <p>Start now</p>
-    <form action="#" class="form-inline">
-       <input type="text" class="form-control form-inputs" placeholder="Where?">
-       <input type="text" class="form-control form-inputs" placeholder="When?">
-       <select name="" id="" class="form-control form-inputs">
-         <option value="1">1 guest</option>
-         <option value="2">2 guests</option>
-         <option value="3">3 guests</option>
-       </select>
-       <input type="submit" class="btn btn-primary" value="Search">
-     </form>
-  </div>
-</div>
-
-
-<div class="container">
-  <div class="row">
-      <% data.cities.each do |city, infos| %>
-       <div class=" col-xs-12 col-sm-4 col-md-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%= city %>');">
-          <div class="card-category"><%= infos.address %>
-          </div>
-          <div class="card-description">
-          <p><%= infos.description %></p>
-          </div>
-          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/<%= infos.name %>">
-          <a class="card-link" href="/flats/<%= infos.name %>.html" ></a>
-        </div>
-       </div>
-      <% end %>
-  </div>
-</div>
-
-
-<div id="home">
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,100,183,0.15) 100%, rgba(0,30,100,0.4) 53%), url(<%= image_path "background.jpg"%>);"">
   <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+    <h1>FisioMoço</h1>
   </div>
 </div>
