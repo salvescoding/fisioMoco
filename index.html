@@ -6,28 +6,28 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title>Le Wagon - Middleman</title>
-    <link href="stylesheets/application-0fe59bcf.css" rel="stylesheet" />
+    <title>FisioMoço</title>
+    <link href="stylesheets/application-8eb28935.css" rel="stylesheet" />
     <script src="javascripts/application-93de88c9.js"></script>
-    <link href="images/favicon-f15af148.png" rel="icon" type="image/png" />
+    <link href="images/hold-4b30eed8.svg" rel="icon" type="image/svg" />
   </head>
   <body>
     <div class="navbar-wagon">
   <!-- Logo -->
   <a href="/" class="navbar-wagon-brand">
-    <img src="images/logo-acc9c0ec.png" alt="logo">
+    <img src="images/hold-4b30eed8.svg" class="logo-home" alt="logo" />
   </a>
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Host</a>
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Trips</a>
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Messages</a>
-    <a href="team.html" class="navbar-wagon-item navbar-wagon-link">Team</a>
+    <a href="especialidades.html" class="navbar-wagon-item navbar-wagon-link">Especialidades</a>
+    <a href="educacao.html" class="navbar-wagon-item navbar-wagon-link">Educação</a>
+    <a href="contato.html" class="navbar-wagon-item navbar-wagon-link">Contato</a>
+
 
     <!-- Profile picture with dropdown list -->
-    <div class="navbar-wagon-item">
+<!--     <div class="navbar-wagon-item">
       <div class="dropdown">
         <img src="https://kitt.lewagon.com/placeholder/users/salvescoding" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
@@ -36,7 +36,7 @@
           <li><a href="#">Log Out</a></li>
         </ul>
       </div>
-    </div>
+    </div> -->
   </div>
 
   <!-- Dropdown appearing on mobile only -->
@@ -44,123 +44,31 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Host</a></li>
-        <li><a href="#">Trips</a></li>
-        <li><a href="#">Messagese</a></li>
+        <li>
+          <a href="contato.html" class="navbar-wagon-item navbar-wagon-link">Contato</a>
+        </li>
+        <li>
+          <a href="educacao.html" class="navbar-wagon-item navbar-wagon-link">Educação</a>
+        </li>
+        <li>
+          <a href="especialidades.html" class="navbar-wagon-item navbar-wagon-link">Especialidades</a>
+        </li>
       </ul>
     </div>
   </div>
 </div>
 
-    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/berlin');">
-  <div class="banner-content">
-    <h1>Welcome to middleman</h1>
-    <p>Start now</p>
-    <form action="#" class="form-inline">
-       <input type="text" class="form-control form-inputs" placeholder="Where?">
-       <input type="text" class="form-control form-inputs" placeholder="When?">
-       <select name="" id="" class="form-control form-inputs">
-         <option value="1">1 guest</option>
-         <option value="2">2 guests</option>
-         <option value="3">3 guests</option>
-       </select>
-       <input type="submit" class="btn btn-primary" value="Search">
-     </form>
-  </div>
-</div>
-
-
-<div class="container">
-  <div class="row">
-       <div class=" col-xs-12 col-sm-4 col-md-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/berlin');">
-          <div class="card-category">Berlin
-          </div>
-          <div class="card-description">
-          <p>24/7 Fun</p>
-          </div>
-          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/monsieurpaillard">
-          <a class="card-link" href="/flats/monsieurpaillard.html" ></a>
-        </div>
-       </div>
-       <div class=" col-xs-12 col-sm-4 col-md-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/paris');">
-          <div class="card-category">Paris
-          </div>
-          <div class="card-description">
-          <p>Full of frenchies</p>
-          </div>
-          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/ssaunier">
-          <a class="card-link" href="/flats/ssaunier.html" ></a>
-        </div>
-       </div>
-       <div class=" col-xs-12 col-sm-4 col-md-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/amsterdam');">
-          <div class="card-category">Amsterdam
-          </div>
-          <div class="card-description">
-          <p>Full of dutchies</p>
-          </div>
-          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/papillard">
-          <a class="card-link" href="/flats/papillard.html" ></a>
-        </div>
-       </div>
-       <div class=" col-xs-12 col-sm-4 col-md-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/barcelona');">
-          <div class="card-category">Barcelona
-          </div>
-          <div class="card-description">
-          <p>Full of hippies</p>
-          </div>
-          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/ssaunier">
-          <a class="card-link" href="/flats/ssaunier.html" ></a>
-        </div>
-       </div>
-       <div class=" col-xs-12 col-sm-4 col-md-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/tokyo');">
-          <div class="card-category">Tokyo
-          </div>
-          <div class="card-description">
-          <p>Full of Asians</p>
-          </div>
-          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/papillard">
-          <a class="card-link" href="/flats/papillard.html" ></a>
-        </div>
-       </div>
-       <div class=" col-xs-12 col-sm-4 col-md-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/rio');">
-          <div class="card-category">Rio
-          </div>
-          <div class="card-description">
-          <p>Samba</p>
-          </div>
-          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/monsieurpaillard">
-          <a class="card-link" href="/flats/monsieurpaillard.html" ></a>
-        </div>
-       </div>
-  </div>
-</div>
-
-
-<div id="home">
+    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,100,183,0.15) 100%, rgba(0,30,100,0.4) 53%), url(images/background-05dce077.jpg);"">
   <div class="home-content">
-    <img src="images/logo-acc9c0ec.png" width="200" alt="Logo" />
-    <p class="about">
-      <a href="about.html">More about this template</a>
-    </p>
+    <h1>FisioMoço</h1>
   </div>
 </div>
 
     <div class="footer">
   <div class="footer-links">
-    <a href="#"><i class="fa fa-github"></i></a>
-    <a href="#"><i class="fa fa-instagram"></i></a>
     <a href="#"><i class="fa fa-facebook"></i></a>
     <a href="#"><i class="fa fa-twitter"></i></a>
     <a href="#"><i class="fa fa-linkedin"></i></a>
-  </div>
-  <div class="footer-copyright hidden-xs">
-    This footer is made with <i class="fa fa-heart"></i> at Le Wagon
   </div>
 </div>
 
