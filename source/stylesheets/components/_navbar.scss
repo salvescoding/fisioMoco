@@ -36,11 +36,15 @@
 
 /* Navbar link */
 .navbar-wagon-link {
-  color: #616668;
+  color: whitesmoke;
   font-size: 15px;
+  font-family: lobster;
+  letter-spacing: 2px;
+  opacity: 0.8;
   &:hover {
-    color: #da552f;
+    color: white;
     text-decoration: none;
+    opacity: 1;
   }
 }
 
@@ -55,6 +59,7 @@
   li > a {
     transition: color 0.3s ease;
     font-weight: lighter !important;
+    font-family: lobster;
     color: #999999 !important;
     font-size: 15px !important;
     line-height: 22px !important;
