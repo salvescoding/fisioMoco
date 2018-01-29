@@ -32,6 +32,9 @@
 .navbar-wagon-item {
   cursor: pointer;
   padding: 0 20px;
+  @media screen and (max-width: $xtrasmall) {
+    padding: 0 10px;
+  }
 }
 
 /* Navbar link */
@@ -39,8 +42,12 @@
   color: whitesmoke;
   font-size: 15px;
   font-family: lobster;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   opacity: 0.8;
+  @media screen and (max-width: $xtrasmall) {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
   &:hover {
     color: white;
     text-decoration: none;

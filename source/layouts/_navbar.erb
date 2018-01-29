@@ -5,25 +5,14 @@
   </a>
 
   <!-- Right Navigation -->
-  <div class="navbar-wagon-right hidden-xs">
+  <div class="navbar-wagon-right">
     <%= link_to 'Osteopatia Visceral', '/especialidades.html', class: "navbar-wagon-item navbar-wagon-link" %>
     <%= link_to 'RPG', '/especialidades.html', class: "navbar-wagon-item navbar-wagon-link" %>
     <%= link_to 'Fisioterapia', '/especialidades.html', class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to 'Educação', '/educacao.html', class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to 'Contato', '/contato.html', class: "navbar-wagon-item navbar-wagon-link" %>
-
-
-    <!-- Profile picture with dropdown list -->
-<!--     <div class="navbar-wagon-item">
-      <div class="dropdown">
-        <img src="https://kitt.lewagon.com/placeholder/users/salvescoding" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
-        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Log Out</a></li>
-        </ul>
-      </div>
-    </div> -->
+    <div class="hidden-xs">
+      <%= link_to 'Educação', '/educacao.html', class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to 'Contato', '/contato.html', class: "navbar-wagon-item navbar-wagon-link" %>
+    </div>
   </div>
 
   <!-- Dropdown appearing on mobile only -->
@@ -36,9 +25,6 @@
         </li>
         <li>
           <%= link_to 'Educação', '/educacao.html', class: "navbar-wagon-item navbar-wagon-link" %>
-        </li>
-        <li>
-          <%= link_to 'Especialidades', '/especialidades.html', class: "navbar-wagon-item navbar-wagon-link" %>
         </li>
       </ul>
     </div>
