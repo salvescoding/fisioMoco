@@ -21,6 +21,10 @@
 
 .navbar-wagon-brand img {
   height: 50px;
+  @media screen and (max-width: $xtrasmall) {
+    height: 35px;
+    margin-left: -15px;
+  }
 }
 
 .navbar-wagon-right {
@@ -45,7 +49,7 @@
   letter-spacing: 3px;
   opacity: 0.8;
   @media screen and (max-width: $xtrasmall) {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px;
   }
   &:hover {
@@ -88,6 +92,13 @@
     border-left: 1px solid $navbar-gray;
     border-top: 1px solid $navbar-gray;
   }
+}
+
+/* Graduation Icon */
+
+#grad-icon {
+  color: whitesmoke;
+  opacity: 0.8;
 }
 
 
