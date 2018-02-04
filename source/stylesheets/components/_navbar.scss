@@ -8,11 +8,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  .avatar {
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-  }
   .sticky {
     background: white;
   }
@@ -23,8 +18,7 @@
   and (max-device-width: $iphone4)
  {
   .navbar-wagon-home {
-    justify-content: center;
-    padding: 0 20px;
+    justify-content: space-between;
   }
 }
 
@@ -33,11 +27,11 @@
 .navbar-wagon-brand img {
   height: 50px;
   @media screen and (max-width: $small) {
-    height: 35px;
-    margin-left: -15px;
+    height: 30px;
   }
   @media screen and (max-width: $iphone4) {
     height: 30px;
+    margin-left: -15px;
   }
 }
 
@@ -45,6 +39,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: $iphone4) {
+    margin-left: -15px;
+  }
 }
 
 .navbar-wagon-item-home {
@@ -84,6 +81,7 @@
   margin-top: 15px;
   box-shadow: 1px 1px 4px $navbar-gray;
   border-color: $navbar-gray;
+  margin-left: 15px;
   li > a {
     transition: color 0.3s ease;
     font-weight: lighter !important;
@@ -115,7 +113,7 @@
 
 #grad-icon {
   color: whitesmoke;
-  opacity: 0.8;
+
 }
 
 
