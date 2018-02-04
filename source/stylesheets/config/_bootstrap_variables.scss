@@ -17,23 +17,11 @@ $brand-info:      $yellow;
 $brand-danger:    $red;
 $brand-warning:   $orange;
 
-// Buttons & inputs' radius
-$border-radius-base:  2px;
-$border-radius-large: 2px;
-$border-radius-small: 2px;
 
-// Override other variables below!
-
-/* Description Animation Homepage */
-$slider-name: typing-slider;
-$slides: 3;
-$typing-duration: 3s;
-$tab-letters: 12 3 10; //number of characters in each paragraph
-$slider-font-size: 30px;
-$slider-font-size-small: 14px;
 
 
 // Media sizes
+$iphone4: 480px;
 $xtrasmall: 640px;
 $small: 768px;
 $medium: 960px;

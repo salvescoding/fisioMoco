@@ -18,12 +18,25 @@
   }
 }
 
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: $iphone4)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  .navbar-wagon {
+    justify-content: center;
+  }
+}
+
 
 .navbar-wagon-brand img {
   height: 50px;
   @media screen and (max-width: $xtrasmall) {
     height: 35px;
     margin-left: -15px;
+  }
+  @media screen and (max-width: $iphone4) {
+    height: 30px;
   }
 }
 
@@ -38,6 +51,9 @@
   padding: 0 20px;
   @media screen and (max-width: $xtrasmall) {
     padding: 0 10px;
+  }
+  @media screen and (max-width: $iphone4) {
+    padding: 0 6px;
   }
 }
 
