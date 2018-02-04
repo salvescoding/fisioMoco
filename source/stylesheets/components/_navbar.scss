@@ -19,6 +19,7 @@
  {
   .navbar-wagon-home {
     justify-content: space-between;
+
   }
 }
 
@@ -30,7 +31,7 @@
     height: 30px;
   }
   @media screen and (max-width: $iphone4) {
-    height: 30px;
+    height: 25px;
     margin-left: -15px;
   }
 }
@@ -38,7 +39,7 @@
 .navbar-wagon-right {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   @media screen and (max-width: $iphone4) {
     margin-left: -15px;
   }
