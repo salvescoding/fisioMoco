@@ -21,17 +21,18 @@
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: $iphone4)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
+ {
   .navbar-wagon {
     justify-content: center;
+    padding: 0 20px;
   }
 }
 
 
+
 .navbar-wagon-brand img {
   height: 50px;
-  @media screen and (max-width: $xtrasmall) {
+  @media screen and (max-width: $small) {
     height: 35px;
     margin-left: -15px;
   }
@@ -49,7 +50,7 @@
 .navbar-wagon-item {
   cursor: pointer;
   padding: 0 20px;
-  @media screen and (max-width: $xtrasmall) {
+  @media screen and (max-width: $small) {
     padding: 0 10px;
   }
   @media screen and (max-width: $iphone4) {
