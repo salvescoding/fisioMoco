@@ -1,4 +1,4 @@
-.navbar-wagon-home {
+.navbar-wagon {
   background: transparent;
   position: fixed;
   width: 100%;
@@ -17,7 +17,7 @@
   and (min-device-width: 320px)
   and (max-device-width: $iphone4)
  {
-  .navbar-wagon-home {
+  .navbar-wagon {
     justify-content: space-between;
 
   }
@@ -45,7 +45,7 @@
   }
 }
 
-.navbar-wagon-item-home {
+.navbar-wagon-item {
   cursor: pointer;
   padding: 0 20px;
   @media screen and (max-width: $small) {
@@ -57,7 +57,7 @@
 }
 
 /* Navbar link */
-.navbar-wagon-link-home {
+.navbar-wagon-link {
   color: whitesmoke;
   font-size: 15px;
   font-family: lobster;
@@ -82,7 +82,6 @@
   margin-top: 15px;
   box-shadow: 1px 1px 4px $navbar-gray;
   border-color: $navbar-gray;
-  margin-left: 15px;
   li > a {
     transition: color 0.3s ease;
     font-weight: lighter !important;
@@ -110,9 +109,9 @@
   }
 }
 
-/* Graduation Icon */
+/*  Icon */
 
-#grad-icon {
+.icon {
   color: whitesmoke;
 
 }
