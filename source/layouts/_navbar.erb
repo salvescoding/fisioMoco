@@ -2,18 +2,15 @@
   <!-- Logo -->
   <a href="/fisioMoco" class="navbar-wagon-brand">
     <%= image_tag "hold.svg", class: "logo-home", alt:"logo" %>
+    <h2>FisioMoço</h2>
   </a>
 
-
+<% @options = ["Osteopatia", "RPG", "Fisioterapia", "Educação", "Contato"] %>
   <!-- Right Navigation -->
-  <div class="navbar-wagon-right">
-    <%= link_to 'Osteopatia', '/osteopatia.html', class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to 'RPG', '/rpg.html', class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to 'Fisioterapia', '/fisioterapia.html', class: "navbar-wagon-item navbar-wagon-link" %>
-    <div class="hidden-xs">
-      <%= link_to 'Educação', '/educacao.html', class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to 'Contato', '/contato.html', class: "navbar-wagon-item navbar-wagon-link" %>
-    </div>
+  <div class="navbar-wagon-right hidden-xs">
+    <% @options.each do |item|  %>
+      <%= link_to "#{item}", "/#{item.downcase}.html", class: "navbar-wagon-item navbar-wagon-link" %>
+    <% end %>
   </div>
 
   <!-- Dropdown appearing on mobile only -->
@@ -21,12 +18,11 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle icon" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <% @options.each do |itemxs| %>
         <li>
-          <%= link_to 'Educação', '/educacao.html', class: "navbar-wagon-item navbar-wagon-link" %>
+          <%= link_to "#{itemxs}", "/#{itemxs.downcase}.html", class: "navbar-wagon-item navbar-wagon-link" %>
         </li>
-        <li>
-          <%= link_to 'Contato', '/contato.html', class: "navbar-wagon-item navbar-wagon-link" %>
-        </li>
+        <% end %>
       </ul>
     </div>
   </div>
