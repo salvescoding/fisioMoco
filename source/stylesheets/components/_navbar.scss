@@ -2,7 +2,10 @@
   background: transparent;
   position: fixed;
   width: 100%;
-  transition: all 0.3s ease;
+  -webkit-transition: background 1s ease-out;
+  -moz-transition: background 1s ease-out;
+  -o-transition: background 1s ease-out;
+  transition: background 1s ease-out;
   height: 70px;
   padding: 0px 30px;
   display: flex;
@@ -14,8 +17,13 @@
 }
 
 .nav-scroll {
-  background: whitesmoke;
+  background: linear-gradient(to right, #000428, #004e92);
   opacity: 0.8;
+  z-index: 999;
+  -webkit-transition: background 1s ease-out;
+  -moz-transition: background 1s ease-out;
+  -o-transition: background 1s ease-out;
+  transition: background 1s ease-out;
 }
 
 
@@ -70,7 +78,7 @@ a.navbar-wagon-brand {
 
 
 .navbar-link-scroll {
-  color: #000428;
+  color: blue;
 }
 
 /* Navbar link */

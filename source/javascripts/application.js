@@ -10,18 +10,12 @@ function attachEvents() {
 
 function runScroll() {
   const nav = document.querySelector(".navbar-wagon");
-  const links = document.querySelectorAll(".navbar-wagon-link");
+  const links = document.querySelectorAll('div.navbar-wagon-right > a');
 
-   if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100)  {
+   if (document.body.scrollTop >= 380 || document.documentElement.scrollTop >= 380)  {
      nav.classList.add("nav-scroll");
-     links.forEach(function(item) {
-       item.classList.add("navbar-link-scroll");
-     });
    } else {
      nav.classList.remove("nav-scroll");
-     links.forEach(function(item) {
-       item.classList.remove("navbar-link-scroll");
-     });
    }
 }
 
