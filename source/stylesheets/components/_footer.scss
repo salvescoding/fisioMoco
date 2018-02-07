@@ -1,14 +1,11 @@
 .footer {
-  background: #F4F4F4;
+  background: transparent;
+  position: sticky;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  height: 50px;
   padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
-  .fa-heart {
-    color: #D23333;
-  }
 }
 
 .footer-links {
@@ -23,6 +20,11 @@
     &:hover {
       opacity: 1;
     }
+  }
+  p {
+    color: black;
+    font-size: 16px;
+    font-family: lobster;
   }
 }
 
