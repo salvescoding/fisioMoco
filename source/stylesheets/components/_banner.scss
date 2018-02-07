@@ -10,11 +10,29 @@
   justify-content: center;
   padding: 0px 20px;
   p {
-    font-size: 25px;
+    font-size: 17px;
     font-weight: lighter;
     color: rgb(255, 255, 255);
-    opacity: 0.6;
-    margin-bottom: 30px;
+    font-family: lobster;
+    opacity: 0.8;
+    @media screen and (max-width: $iphone4) {
+      font-size: 12px;
+    }
+
+  }
+  h5{
+    font-size: 25px;
+    width: 40%;
+    margin: 0 auto;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    font-family:'Tangerine', cursive;
+    opacity: 0.8;
+    border-bottom: 0.5px solid white;
+    padding-bottom: 5px;
+    @media screen and (max-width: $iphone4) {
+      font-size: 20px;
+    }
   }
   h1 {
     font-size: 100px;
