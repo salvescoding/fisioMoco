@@ -1,6 +1,6 @@
 function attachEvents() {
   window.addEventListener("scroll", runScroll);
-  init();
+  init()
 }
 
 
