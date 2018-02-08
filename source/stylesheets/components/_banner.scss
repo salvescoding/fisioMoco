@@ -39,6 +39,7 @@
     font-family:'Tangerine', cursive;
     margin-top: -100px;
     letter-spacing: 7px;
+    opacity: 0;
     text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
     @media screen and (max-width: $xtrasmall) {
       font-size: 70px;
