@@ -5,9 +5,8 @@ function attachEvents() {
 
 function selected() {
   const links = document.querySelectorAll('div.navbar-wagon-right > a');
-  let url = window.location.href;
   links.forEach(function(element){
-    if(url.includes(element.pathname) === true) {
+    if(window.location.href.includes(element.pathname) === true) {
       //console.log(element);
       element.classList.add("selected");
     }
