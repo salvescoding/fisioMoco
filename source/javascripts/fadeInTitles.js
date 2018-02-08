@@ -1,5 +1,3 @@
-
-
 function fade() {
   let titles = document.querySelector(".title");
   let opacity = 0.1;  // initial opacity
