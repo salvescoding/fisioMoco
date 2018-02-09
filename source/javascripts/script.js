@@ -1,10 +1,3 @@
-function attachEvents() {
-  window.addEventListener("scroll", runScroll);
-  selected();
-  fadeTitles();
-}
-
-
 // Titles Fade In effect
 function fadeTitles() {
   const titles = document.querySelector(".fadein");
@@ -44,9 +37,13 @@ function runScroll() {
    } else {
      nav.classList.remove("nav-scroll");
    }
-
 }
 
+function attachEvents() {
+  window.addEventListener("scroll", runScroll);
+  selected();
+  fadeTitles();
+}
 
 document.addEventListener("DOMContentLoaded", attachEvents);
 

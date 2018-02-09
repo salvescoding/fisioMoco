@@ -1,0 +1,84 @@
+.contact-show-banner {
+  width: 100vw;
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1{
+    font-family: lobster;
+    color: white;
+    letter-spacing: 10px;
+    font-size: 80px;
+    font-weight: lighter;
+    @media screen and (max-width: $iphone4) {
+      font-size: 50px;
+    }
+  }
+}
+
+.contact {
+  margin-top: 50px;
+  h4 {
+    font-family: lobster;
+    font-size: 19px;
+    letter-spacing: -.003em;
+    text-align: left;
+  }
+  img {
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    @media screen and (max-width: $iphone4) {
+      width: 40px;
+    }
+  }
+  h2{
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    font-size: 50px;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.contact-maps {
+
+  h3 {
+    font-family: 'Tangerine', cursive;
+    font-size: 30px;
+    border: 1px solid black;
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: black;
+    &:hover {
+      color: white;
+      background-color: black;
+      border: 1px solid white;
+    }
+  }
+}
+
+
+.options-map {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* Google Maps */
+
+
+
+
+#map {
+  height: 400px;
+  width: 500px;
+  border-radius: 10px;
+  margin: 0 auto;
+
+ }
