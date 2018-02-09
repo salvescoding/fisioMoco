@@ -8,8 +8,8 @@ function attachEvents() {
 // Titles Fade In effect
 function fade() {
   const titles = document.querySelector(".fadein");
-  var fadeTitle = 0.1;
-  let time = window.setInterval(fadeInTit, 200);
+  let fadeTitle = 0.1;
+  const time = window.setInterval(fadeInTit, 200);
 
     function fadeInTit() {
 
