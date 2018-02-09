@@ -8,17 +8,17 @@ function attachEvents() {
 // Titles Fade In effect
 function fade() {
   const titles = document.querySelector(".fadein");
-  let opa = 0.1;
+  let fadeTitle = 0.1;
   let duration = window.setInterval(fadeInTit, 200);
 
     function fadeInTit() {
 
-      if(opa >= 1) {
+      if(fadeTitle >= 1) {
         clearInterval(duration);
       }
       else {
-        titles.style.opacity = opa;
-        opa += 0.1;
+        titles.style.opacity = fadeTitle;
+        fadeTitle += 0.1;
       }
     }
 }
