@@ -9,7 +9,7 @@ function attachEvents() {
 function fadeTitles() {
   const titles = document.querySelector(".fadein");
   const time = window.setInterval(fadeInTit, 200);
-  let opacityTitle = 0.1;
+  var opacityTitle = 0.1;
 
     function fadeInTit() {
 
