@@ -1,7 +1,27 @@
 function attachEvents() {
   window.addEventListener("scroll", runScroll);
   selected();
+  fade();
 }
+
+function fade() {
+  const titles = document.querySelector(".fadein");
+  let opacity = 0.1;
+  let duration = window.setInterval(fadeInTit, 200);
+
+    function fadeInTit() {
+
+      if(opacity >= 1) {
+        clearInterval(duration);
+      }
+      else {
+        titles.style.opacity = opacity;
+        opacity += 0.1;
+      }
+    }
+}
+
+
 
 function selected() {
   const links = document.querySelectorAll('div.navbar-wagon-right > a');
