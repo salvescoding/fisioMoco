@@ -1,12 +1,12 @@
 function attachEvents() {
   window.addEventListener("scroll", runScroll);
   selected();
-  fade();
+  fadeTitles();
 }
 
 
 // Titles Fade In effect
-function fade() {
+function fadeTitles() {
   const titles = document.querySelector(".fadein");
   let opi = 0.1;
   const time = window.setInterval(fadeInTit, 200);
