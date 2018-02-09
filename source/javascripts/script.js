@@ -4,25 +4,27 @@ function attachEvents() {
   fade();
 }
 
+
+// Titles Fade In effect
 function fade() {
   const titles = document.querySelector(".fadein");
-  let opacity = 0.1;
+  let opa = 0.1;
   let duration = window.setInterval(fadeInTit, 200);
 
     function fadeInTit() {
 
-      if(opacity >= 1) {
+      if(opa >= 1) {
         clearInterval(duration);
       }
       else {
-        titles.style.opacity = opacity;
-        opacity += 0.1;
+        titles.style.opacity = opa;
+        opa += 0.1;
       }
     }
 }
 
 
-
+// Specialities now apppear as selected when you are on the page
 function selected() {
   const links = document.querySelectorAll('div.navbar-wagon-right > a');
   links.forEach(function(element){
@@ -33,6 +35,7 @@ function selected() {
   });
 }
 
+// Navbar change background color once you scroll
 function runScroll() {
   const nav = document.querySelector(".navbar-wagon");
 
