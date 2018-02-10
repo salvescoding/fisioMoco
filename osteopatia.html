@@ -7,11 +7,22 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>FisioMoço</title>
-    <link href="stylesheets/application-3bd38879.css" rel="stylesheet" />
-    <script src="javascripts/application-b5ea7dd5.js"></script>
+    <link href="stylesheets/application-40552688.css" rel="stylesheet" />
     <link href="images/hold-1-7144d552.png" rel="icon" type="image/png" />
+    <script>
+      function measureCRP() {
+        var t = window.performance.timing,
+          interactive = t.domInteractive - t.domLoading,
+          dcl = t.domContentLoadedEventStart - t.domLoading,
+          complete = t.domComplete - t.domLoading;
+        var stats = document.createElement('p');
+        stats.textContent = 'interactive: ' + interactive + 'ms, ' +
+            'dcl: ' + dcl + 'ms, complete: ' + complete + 'ms';
+        console.log(stats);
+      }
+    </script>
   </head>
-  <body>
+  <body onload="measureCRP()">
     <div class="navbar-wagon">
   <!-- Logo -->
   <a href="/fisioMoco" class="navbar-wagon-brand">
@@ -94,5 +105,6 @@
 </div>
 
 
+    <script src="javascripts/application-0730c34b.js"></script>
   </body>
 </html>
