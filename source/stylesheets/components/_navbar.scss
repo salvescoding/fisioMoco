@@ -107,11 +107,11 @@ a.navbar-wagon-brand {
 
 /* Dropdown menu */
 .navbar-wagon-dropdown-menu {
-  margin-top: 15px;
+  margin-top: 13px;
   box-shadow: 1px 1px 4px $navbar-gray;
   border-color: $navbar-gray;
   li > a {
-    transition: color 0.8s ease;
+    transition: color 0.5s ease;
     font-weight: lighter !important;
     font-family: lobster;
     color: black !important;
@@ -119,7 +119,7 @@ a.navbar-wagon-brand {
     line-height: 22px !important;
     padding: 10px 20px;
     &:hover {
-      background: transparent !important;
+      background: light-grey !important;
       color: black !important;
 
     }
