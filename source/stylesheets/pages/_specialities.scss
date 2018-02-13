@@ -2,11 +2,8 @@
 .special-show-banner {
   height: 65vh;
   width: 100vw;
-  background: #000428; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #000428, #004e92); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #000428, #004e92);
-  background-attachment: fixed;
-  background-position: center;
+  background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
+  background: linear-gradient(to right, #2a5298, #1e3c72);
   display: flex;
   justify-content: center;
   align-items: center;

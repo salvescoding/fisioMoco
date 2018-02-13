@@ -27,6 +27,8 @@
     @media screen and (max-width: $iphone4) {
       font-size: 30px;
       font-weight: lighter;
+      padding-left: 0;
+      padding-top: 20px;
     }
   }
 }
@@ -125,11 +127,11 @@
   color: white;
   @media screen and (max-width: $iphone4) {
     font-size: 12px;
-
+    text-align: center;
   }
 }
 
-
+@media screen and (min-width: 770px) {
 .contact-link {
   &::after {
       content: '';
@@ -143,6 +145,7 @@
       width: 100%;
     }
   }
+}
 
 .facebook-icon {
   color: white;

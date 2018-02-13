@@ -11,7 +11,7 @@
 }
 
 .navbar-wagon.nav-scroll {
-  background: linear-gradient(to right, #000428, #004e92);
+  background: linear-gradient(to right, #2a5298, #1e3c72);
   opacity: 0.7;
   z-index: 999;
   transition: 0.5s;
@@ -88,16 +88,18 @@ a.navbar-wagon-brand {
     font-size: 14px;
     letter-spacing: 1px;
   }
-  &::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: white;
-    transition: width .3s;
-  }
-  &:hover::after {
-    width: 100%;
+  @media screen and (min-width: 694px) {
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: white;
+      transition: width .3s;
+    }
+    &:hover::after {
+      width: 100%;
+    }
   }
 }
 
@@ -127,6 +129,7 @@ a:hover, a:focus {
   margin-top: 13px;
   box-shadow: 1px 1px 4px $navbar-gray;
   border-color: $navbar-gray;
+  z-index: 20;
   li > a {
     transition: color 0.5s ease;
     font-weight: lighter !important;
@@ -148,7 +151,6 @@ a:hover, a:focus {
     position: absolute;
     right: 10px;
     top: -6px;
-
     background-color: white;
     transform: rotate(45deg);
     border-left: 1px solid $navbar-gray;
