@@ -148,6 +148,10 @@
   color: white;
   padding: 10px;
   font-size: 20px;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+  }
   @media screen and (max-width: $iphone4) {
     font-size: 13px;
   }
