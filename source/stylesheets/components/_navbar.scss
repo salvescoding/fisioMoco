@@ -71,35 +71,52 @@ a.navbar-wagon-brand {
 }
 
 
-.navbar-link-scroll {
-  color: blue;
-}
+// .navbar-link-scroll {
+//   color: blue;
+// }
 
 /* Navbar link */
 .navbar-wagon-link {
-  color: whitesmoke;
+  color: white;
   font-size: 13px;
   font-family: lobster;
   letter-spacing: 3px;
-  opacity: 1;
+  opacity: 0.9;
+  text-decoration: none;
 
   @media screen and (max-width: $xtrasmall) {
     font-size: 14px;
     letter-spacing: 1px;
   }
-  &:hover {
-    color: white;
-    text-decoration: none;
-    opacity: 0.8;
-    border-top: 1.5px solid white;
-
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
   }
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+a:hover, a:focus {
+  color: white;
+  opacity: 1;
+  text-decoration: none;
 }
 
 /* Selected items */
 
-.selected {
-  border-bottom: 0.7px solid white;
+.selected::after {
+  content: '';
+  display: block;
+  background: white;
+  height: 2px;
+  width: 100%;
+  opacity: 1;
+
 }
 
 

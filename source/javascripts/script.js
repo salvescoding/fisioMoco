@@ -1,20 +1,10 @@
-// Titles Fade In effect
-// function fadeTitles() {
-//   const titles = document.querySelector(".fadein");
-//   const time = window.setInterval(fadeInTit, 200);
-//   var opacityTitle = 0.1;
+// Select Contact informations
 
-//     function fadeInTit() {
+function contactInfo() {
+  const personal = document.querySelector(".personal");
+  const where = document.querySelector(".where");
 
-//       if(opacityTitle >= 1) {
-//         clearInterval(time);
-//       }
-//       else {
-//         titles.style.opacity = opacityTitle;
-//         opacityTitle += 0.1;
-//       }
-//     }
-// }
+}
 
 
 // Specialities now apppear as selected when you are on the page
@@ -42,7 +32,7 @@ function runScroll() {
 function attachEvents() {
   window.addEventListener("scroll", runScroll);
   selected();
-  //fadeTitles();
+  contactInfo();
 }
 
 document.addEventListener("DOMContentLoaded", attachEvents);

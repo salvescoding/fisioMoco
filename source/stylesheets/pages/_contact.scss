@@ -1,163 +1,165 @@
 .contact-show-banner {
   width: 100vw;
-  height: 65vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-attachment: fixed;
+  height: 110vh;
+  background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
+  background: linear-gradient(to right, #2a5298, #1e3c72);
+  @media screen and (max-width: $iphone4) {
+    height: 170vh;
+  }
+  @media screen and (min-device-width: 481px) and (max-device-width: $small) {
+    height: 130vh;
+  }
+}
+
+.wrapper-all {
+  padding-top: 160px;
+  @media screen and (max-width: $iphone4) {
+    padding-top: 70px;
+  }
   h1{
     font-family: lobster;
     color: white;
-    letter-spacing: 10px;
-    font-size: 80px;
+    letter-spacing: 3px;
+    font-size: 70px;
+    font-weight: 200;
+    @media screen and (max-width: $iphone4) {
+      font-size: 30px;
+      font-weight: lighter;
+    }
+  }
+}
+
+.options-contact {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.where {
+  color: white;
+  margin-bottom: 50px;
+  h4 {
+    font-size: 16px;
     font-weight: lighter;
     @media screen and (max-width: $iphone4) {
-      font-size: 50px;
+      font-size: 12px;
+      text-align: center;
     }
   }
-}
-
-.contact {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  h4 {
-    font-family: lobster;
-    font-size: 17px;
-    letter-spacing: -.003em;
-    text-align: center;
-    line-height: 1.2em;
-
-  }
-  h3 {
-    font-family: 'Tangerine', cursive;
-    font-size: 28px;
-    color: black;
-    border-bottom: 2px solid black;
-    margin: 10px auto;
-    @media screen and (max-width: $iphone4) {
-      font-size: 26px;
-    }
-    &:hover {
-    color: #004e92;
-    }
-  }
-
-  h2{
-    text-align: center;
-    font-family: 'Tangerine', cursive;
-    font-size: 40px;
-  }
-}
-
- a {
-  color: black;
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-
-.phone {
-  border-radius: 10px;
-  font-size: 13px;
-  padding: 5px;
-  &:hover {
+  a {
     color: white;
-    background: black;
+    font-size: 14px;
+    @media screen and (max-width: $iphone4) {
+      font-size: 12px;
+
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
   }
+  h2 {
+    font-size: 16px;
+    font-weight: lighter;
+    @media screen and (max-width: $iphone4) {
+      font-size: 12px;
+      text-align: center;
+
+    }
+  }
+}
+
+.wrapper-where {
+  margin-top: 100px;
+  @media screen and (max-width: $iphone4) {
+    margin-top: 0;
+  }
+
+}
+
+/* Personal info */
+
+.personal {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  @media screen and (max-width: $iphone4) {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+  a {
+    color: white;
+    font-size: 15px;
+    @media screen and (max-width: $iphone4) {
+      font-size: 12px;
+
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  p {
+    font-size: 13px;
+    font-weight: lighter;
+    @media screen and (max-width: $iphone4) {
+      font-size: 10px;
+      text-align: center;
+
+    }
+  }
+}
+
+.contact-details {
+  padding: 10px 0;
+}
+
+.personal-wrapper h2 {
+  font-size: 16px;
+  font-weight: lighter;
+  color: white;
   @media screen and (max-width: $iphone4) {
     font-size: 12px;
-    padding: 5px;
-  }
 
+  }
 }
 
-.domicilio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  @media screen and (max-width: $iphone4) {
-    margin-top: -20px;
-  }
-  h4 {
-    margin-top: -5px;
-    @media screen and (max-width: $iphone4) {
-      margin-top: -10;
+
+.contact-link {
+  &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: white;
+      transition: width .4s;
+    }
+    &:hover::after {
+      width: 100%;
     }
   }
-}
 
-
-
-.options-location {
-  display: flex;
-  align-items: center;
-  height: 80px;
-  flex-direction: column;
-  @media screen and (max-width: $iphone4) {
-    height: 60px;
-  }
-
-}
-
-.wrapper-personal {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-}
-
-/* Personal contact & social media */
-.email {
-  color: black;
-  font-size: 14px;
-  margin-top: 5px;
-  &:hover {
-    color: black;
-    border-bottom: 1px solid black;
-  }
-}
-
-/* social media icons */
 .facebook-icon {
-  color: black;
-  opacity: 1;
-  text-decoration: none;
-  font-size: 17px;
-  padding: 10px 0;
-  transition: all 0.4s ease;
-  &:hover {
-    opacity: 0.7;
-    font-size: 22px;
-    color: black;
-  }
-}
-
-/* Google Maps */
-
-
-#map {
-  height: 400px;
-  width: 100%;
-  border-radius: 10px;
-  margin: 0 auto;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
   @media screen and (max-width: $iphone4) {
-    width: 100%;
-    height: 300px;
+    font-size: 13px;
   }
 
- }
-
- /* Thank you icons */
+}
 
 .thank-icons {
   font-size: 10px;
-  font-family: lobster;
   color: black;
+  font-family: lobster;
+  color: white;
+  opacity: 0.7;
+  a {
+    color: black;
+  }
 }
 
-.icons-thank {
-  margin: 50px 0 5px 5px;
-}
