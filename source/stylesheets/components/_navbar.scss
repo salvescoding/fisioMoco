@@ -71,10 +71,6 @@ a.navbar-wagon-brand {
 }
 
 
-// .navbar-link-scroll {
-//   color: blue;
-// }
-
 /* Navbar link */
 .navbar-wagon-link {
   color: white;
@@ -88,18 +84,16 @@ a.navbar-wagon-brand {
     font-size: 14px;
     letter-spacing: 1px;
   }
-  @media screen and (min-width: 694px) {
-    &::after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 2px;
-      background: white;
-      transition: width .3s;
-    }
-    &:hover::after {
-      width: 100%;
-    }
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+  }
+  &:hover::after {
+    width: 100%;
   }
 }
 
@@ -127,9 +121,7 @@ a:hover, a:focus {
 /* Dropdown menu */
 .navbar-wagon-dropdown-menu {
   margin-top: 13px;
-  box-shadow: 1px 1px 4px $navbar-gray;
   border-color: $navbar-gray;
-  z-index: 20;
   li > a {
     transition: color 0.5s ease;
     font-weight: lighter !important;
@@ -153,8 +145,6 @@ a:hover, a:focus {
     top: -6px;
     background-color: white;
     transform: rotate(45deg);
-    border-left: 1px solid $navbar-gray;
-    border-top: 1px solid $navbar-gray;
   }
 }
 
