@@ -9,20 +9,8 @@
     <title>FisioMoço</title>
     <%= stylesheet_link_tag "application" %>
     <%= favicon_tag 'hold-1.png' %>
-    <script>
-      function measureCRP() {
-        var t = window.performance.timing,
-          interactive = t.domInteractive - t.domLoading,
-          dcl = t.domContentLoadedEventStart - t.domLoading,
-          complete = t.domComplete - t.domLoading;
-        var stats = document.createElement('p');
-        stats.textContent = 'interactive: ' + interactive + 'ms, ' +
-            'dcl: ' + dcl + 'ms, complete: ' + complete + 'ms';
-        console.log(stats);
-      }
-    </script>
   </head>
-  <body onload="measureCRP()">
+  <body>
     <%= partial "layouts/navbar" %>
     <%= yield %>
     <%= javascript_include_tag "application" %>

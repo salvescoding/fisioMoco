@@ -29,11 +29,16 @@ function runScroll() {
    }
 }
 
+
+
+
 function attachEvents() {
   window.addEventListener("scroll", runScroll);
   selected();
   contactInfo();
 }
+
+
 
 document.addEventListener("DOMContentLoaded", attachEvents);
 

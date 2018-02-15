@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 999;
 }
 
 .navbar-wagon.nav-scroll {
@@ -79,16 +80,13 @@ a.navbar-wagon-brand {
   letter-spacing: 3px;
   opacity: 0.9;
   text-decoration: none;
+  font-weight: lighter;
 
-  @media screen and (max-width: $xtrasmall) {
-    font-size: 14px;
-    letter-spacing: 1px;
-  }
   &::after {
     content: '';
     display: block;
     width: 0;
-    height: 2px;
+    height: 1px;
     background: white;
     transition: width .3s;
   }
@@ -109,7 +107,7 @@ a:hover, a:focus {
   content: '';
   display: block;
   background: white;
-  height: 2px;
+  height: 1px;
   width: 100%;
   opacity: 1;
 
@@ -120,18 +118,19 @@ a:hover, a:focus {
 
 /* Dropdown menu */
 .navbar-wagon-dropdown-menu {
-  margin-top: 13px;
+  margin-top: 10px;
   border-color: $navbar-gray;
+
   li > a {
-    transition: color 0.5s ease;
+    transition: color 0.7s ease;
     font-weight: lighter !important;
     font-family: lobster;
     color: black !important;
-    font-size: 14px !important;
-    line-height: 22px !important;
+    font-size: 15px !important;
+    line-height: 27px !important;
     padding: 10px 20px;
     &:hover {
-      background: light-grey !important;
+      background: lightgrey !important;
       color: black !important;
 
     }
@@ -148,10 +147,17 @@ a:hover, a:focus {
   }
 }
 
+.dropdown-menu-right {
+    left: auto;
+    right: -6px;
+}
+
 /*  Icon */
 
 .icon {
-  color: whitesmoke;
+  color: white;
+  margin-top: 10px;
+  font-size: larger;
 
 }
 

@@ -9,6 +9,16 @@
     margin-right: auto;
     display: block;
   }
+  h4 {
+    font-family: lobster;
+    font-size: 17px;
+    letter-spacing: -.006em;
+    text-align: center;
+    line-height: 1.78;
+    @media screen and (max-width: $iphone4) {
+      font-size: 15px;
+    }
+  }
 }
 
 .educ-show-banner {
@@ -37,12 +47,16 @@
   margin: 30px 0 30px 0;
   h4 {
     font-family: lobster;
-    font-size: 19px;
-    letter-spacing: -.003em;
+    font-size: 17px;
+    letter-spacing: -.006em;
     text-align: left;
+    line-height: 1;
+    @media screen and (max-width: $iphone4) {
+      font-size: 15px;
+    }
   }
   img {
-    width: 60px;
+    width: 50px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -53,7 +67,7 @@
   h2{
     text-align: center;
     font-family: 'Tangerine', cursive;
-    font-size: 50px;
+    font-size: 40px;
      @media screen and (max-width: $iphone4) {
       font-size: 34px;
      }
