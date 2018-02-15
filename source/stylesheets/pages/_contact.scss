@@ -1,13 +1,10 @@
 .contact-show-banner {
   width: 100vw;
-  height: 110vh;
+  height: 100vh;
   background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
   background: linear-gradient(to right, #2a5298, #1e3c72);
-  @media screen and (max-height: $iphone4) {
-    height: 170vh;
-  }
   @media screen and (max-width: $iphone4) {
-    height: 130vh;
+    height: auto;
   }
 }
 
