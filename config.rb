@@ -19,6 +19,8 @@ end
 activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
+  deploy.remote = 'https://github.com/salvescoding/fisiomoco.github.io.git'
+  deploy.branch = 'gh-pages'
 end
 
 
