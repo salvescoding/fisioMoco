@@ -11,4 +11,4 @@ gem 'font-awesome-middleman'
 gem 'jquery-middleman'
 gem "bootstrap-sass", "~> 3.3.5", :require => false
 
-
+gem 'jekyll-sitemap'
