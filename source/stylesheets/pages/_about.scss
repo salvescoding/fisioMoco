@@ -50,9 +50,10 @@
     font-size: 17px;
     letter-spacing: -.006em;
     text-align: left;
-    line-height: 1.78;
+    line-height: 1;
     @media screen and (max-width: $iphone4) {
       font-size: 15px;
+      line-height: 1.78;
       text-align: center;
     }
   }
