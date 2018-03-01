@@ -7,13 +7,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-attachment: fixed;
 }
 
-.image-background img {
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-width: 100%;
-  width: auto;
-  height: auto;
+.home-content {
+  background-attachment: fixed;
 }
 
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}

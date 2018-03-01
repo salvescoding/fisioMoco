@@ -22,11 +22,29 @@ function selected() {
 function runScroll() {
   const nav = document.querySelector(".navbar-wagon");
 
-   if (document.body.scrollTop >= 240 || document.documentElement.scrollTop >= 240)  {
+   if (document.body.scrollTop >= 280 || document.documentElement.scrollTop >= 280)  {
      nav.classList.add("nav-scroll");
    } else {
      nav.classList.remove("nav-scroll");
    }
+}
+
+// Hidden menu bar
+
+function menuBar() {
+  const menu = document.getElementById("menu");
+  const overlay = document.getElementById("overlay");
+
+  menu.addEventListener("click", function(){
+    if(overlay.style.width === "0%") {
+      overlay.style.width = "100%";
+      menu.innerText = "Fechar";
+    }
+    else {
+      overlay.style.width = "0%";
+      menu.innerText = "Menu";
+    }
+  })
 }
 
 
@@ -36,6 +54,7 @@ function attachEvents() {
   window.addEventListener("scroll", runScroll);
   selected();
   contactInfo();
+  menuBar();
 }
 
 

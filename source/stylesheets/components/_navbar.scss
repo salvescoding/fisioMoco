@@ -60,39 +60,20 @@ a.navbar-wagon-brand {
   justify-content: center;
 }
 
-.navbar-wagon-item {
+
+/* Navbar menu open */
+
+.navbar-menu {
   cursor: pointer;
-  padding: 10px 20px;
-  @media screen and (max-width: $small) {
-    padding: 0 10px;
-  }
-  @media screen and (max-width: $iphone4) {
-    padding: 0 6px;
-  }
-}
-
-
-/* Navbar link */
-.navbar-wagon-link {
+  padding: 5px 15px;
   color: white;
-  font-size: 13px;
-  font-family: lobster;
+  font-size: 20px;
+  font-family:'Tangerine', cursive;
   letter-spacing: 3px;
   opacity: 0.9;
   text-decoration: none;
   font-weight: lighter;
-
-  &::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 1px;
-    background: white;
-    transition: width .3s;
-  }
-  &:hover::after {
-    width: 100%;
-  }
+  margin-top: 10px;
 }
 
 a:hover, a:focus {
@@ -101,56 +82,48 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-/* Selected items */
 
-.selected::after {
-  content: '';
-  display: block;
-  background: white;
-  height: 1px;
+
+/* Hidden Menu Bar */
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(to right, #2a5298, #1e3c72);
+  overflow-x: hidden;
+  z-index: 500;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease;
+}
+
+.menu-overlay-appear {
   width: 100%;
-  opacity: 1;
-
 }
 
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  a {
+    padding: 10px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+    display: block;
+    font-size: 30px;
+    opacity: 1;
 
-
-
-/* Dropdown menu */
-.navbar-wagon-dropdown-menu {
-  margin-top: 10px;
-  border-color: $navbar-gray;
-
-  li > a {
-    transition: color 0.7s ease;
-    font-weight: lighter !important;
-    font-family: lobster;
-    color: black !important;
-    font-size: 15px !important;
-    line-height: 27px !important;
-    padding: 10px 20px;
-    &:hover {
-      background: lightgrey !important;
-      color: black !important;
-
-    }
-  }
-  &:before {
-    content: ' ';
-    height: 10px;
-    width: 10px;
-    position: absolute;
-    right: 10px;
-    top: -6px;
-    background-color: white;
-    transform: rotate(45deg);
   }
 }
 
-.dropdown-menu-right {
-    left: auto;
-    right: -6px;
-}
 
 /*  Icon */
 
