@@ -35,16 +35,16 @@ function menuBar() {
   const menu = document.getElementById("menu");
   const overlay = document.getElementById("overlay");
 
-  menu.addEventListener("click", function(){
-    if(overlay.style.width === "0%") {
-      overlay.style.width = "100%";
-      menu.innerText = "Fechar";
-    }
-    else {
-      overlay.style.width = "0%";
-      menu.innerText = "Menu";
-    }
-  })
+  if(overlay.style.width === "0%") {
+    overlay.style.width = "100%";
+    menu.innerText = "X";
+  }
+  else {
+    overlay.style.width = "0%";
+    menu.innerText = "Menu";
+  }
+
+  menu.addEventListener("click", menuBar);
 }
 
 

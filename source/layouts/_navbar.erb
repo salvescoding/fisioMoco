@@ -19,7 +19,7 @@
 <div id="overlay" class="menu-overlay">
   <div class="overlay-content">
     <% @options.each do |item|  %>
-    <%= link_to "#{item}", "/#{item.downcase}.html"%>
+    <%= link_to "#{item}", "/#{item.downcase}.html", class:"tached"%>
     <% end %>
   </div>
 </div>
