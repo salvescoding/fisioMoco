@@ -12,7 +12,6 @@ function selected() {
   const links = document.querySelectorAll('div.navbar-wagon-right > a');
   links.forEach(function(element){
     if(window.location.href.includes(element.pathname) === true) {
-      //console.log(element);
       element.classList.add("selected");
     }
   });
@@ -44,14 +43,14 @@ function menuBar() {
     menu.innerText = "Menu";
   }
 
-  menu.addEventListener("click", menuBar);
+  menu.addEventListener("click", menuBar, false);
 }
 
 
 
 
 function attachEvents() {
-  window.addEventListener("scroll", runScroll);
+  window.addEventListener("scroll", runScroll, false);
   selected();
   contactInfo();
   menuBar();
@@ -59,5 +58,5 @@ function attachEvents() {
 
 
 
-document.addEventListener("DOMContentLoaded", attachEvents);
+document.addEventListener("DOMContentLoaded", attachEvents, false);
 
