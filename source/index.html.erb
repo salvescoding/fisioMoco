@@ -6,35 +6,41 @@
     <p>It is health that is real wealth and not pieces of gold and silver</p>
     <h5>Mahatma Gandhi</h5>
   </div>
+  <a href="#tecnicas">
+    <div class="arrow"></div>
+  </a>
 </div>
 
 <!-- Osteopatia section -->
 
-<div>
-  <div class="container-tecnicas">
-    <%= image_tag("/images/spinal-column.png", class:"image-home", alt:"columna vertebral")%>
-   <div class="tecnicas osteo-container">
-    <h2>Osteopatia</h2>
-    <i></i>
-    <p>A Osteopatia assenta em quatro pilares fundamentais:</p>
-    <p>O ser humano é um todo indivisível. Todas as partes do corpo relacionam-se entre si.
-     O corpo humano tem a capacidade de se autorregular, reencontrando a harmonia e o equilíbrio nas suas estruturas, designada por homeostasia.
-     Para o corpo se autorregular é necessário que não haja obstruções nos canais nervosos, linfáticos, vasculares, além da nutrição celular e eliminação de dejetos.
-     A função arterial é primordial. Se as artérias não funcionarem corretamente, o sistema venoso será mais lento, o que acumulará toxinas, gerando doenças.
-   </p>
-   <a href="/osteopatia.html">
-    <p>Saiba mais --></p>
-  </a>
-</div>
+<div class="row">
+  <div class="container-tecnicas" id="tecnicas">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-offset-sm-2 col-md-4 col-md-offset-2 images-container">
+      <%= image_tag("/images/spinal-column.png", class:"image-osteo", alt:"columna vertebral")%>
+
+    </div>
+    <div class="tecnicas osteo-container col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5">
+      <h2>Osteopatia</h2>
+      <i></i>
+      <p>A Osteopatia assenta em quatro pilares fundamentais:</p>
+      <p>O ser humano é um todo indivisível. Todas as partes do corpo relacionam-se entre si.
+       O corpo humano tem a capacidade de se autorregular, reencontrando a harmonia e o equilíbrio nas suas estruturas, designada por homeostasia.
+       Para o corpo se autorregular é necessário que não haja obstruções nos canais nervosos, linfáticos, vasculares, além da nutrição celular e eliminação de dejetos.
+       A função arterial é primordial. Se as artérias não funcionarem corretamente, o sistema venoso será mais lento, o que acumulará toxinas, gerando doenças.
+     </p>
+     <a href="/osteopatia.html">
+      <p>Saiba mais --></p>
+    </a>
+  </div>
 </div>
 </div>
 
 
 <!-- Fisioterapia section  -->
 
-<div>
+<div class="row">
   <div class="container-tecnicas">
-   <div class="tecnicas fisio-container">
+   <div class="tecnicas fisio-container tecnicas col-xs-10 col-xs-offset-1 col-sm-4 col-offset-sm-2 col-md-4 col-md-offset-1">
     <h2>Fisioterapia</h2>
     <p>
       O Fisioterapeuta atua na recuperação, reeducação, reabilitação e prevenção de incapacidades originadas por disfunções físicas, do foro funcional músculo-esquelético, cardiovascular, respiratório e neurológico, e disfunções psíquicas.
@@ -46,17 +52,21 @@
       <p>Saiba mais --></p>
     </a>
   </div>
-  <%= image_tag("/images/physio.png", class:"image-home", alt:"reabilitação") %>
+    <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-4 ">
+    <%= image_tag("/images/physio.png", class:"image-home", alt:"reabilitação") %>
+  </div>
 </div>
 </div>
 
 
 <!-- RPG Section  -->
 
-<div>
+<div class="row">
   <div class="container-tecnicas">
-    <%= image_tag("/images/rpg.png", class:"image-home", alt:"reabilitação") %>
-    <div class="tecnicas rpg-container">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-offset-sm-2 col-md-4 col-md-offset-2">
+      <%= image_tag("/images/rpg.png", class:"image-home", alt:"reabilitação") %>
+    </div>
+    <div class="tecnicas rpg-container col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5">
       <h2>Reeducação Postural Global</h2>
       <p>
         Ao longo da nossa vida, há vários factores que desencadeiam desequilíbrios no nosso organismo, sejam eles bioquímicos, psicológicos ou mecânicos.

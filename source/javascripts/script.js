@@ -1,3 +1,5 @@
+
+
 // Select Contact informations
 
 function contactInfo() {
@@ -46,6 +48,14 @@ function menuBar() {
   menu.addEventListener("click", menuBar, false);
 }
 
+function smoothAnchor() {
+  $(".arrow").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#tecnicas").offset().top
+      }, 1000);
+  });
+}
+
 
 
 
@@ -54,7 +64,10 @@ function attachEvents() {
   selected();
   contactInfo();
   menuBar();
+  smoothAnchor();
+
 }
+
 
 
 
