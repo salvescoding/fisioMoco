@@ -50,9 +50,10 @@ function menuBar() {
 
 function smoothAnchor() {
   $(".arrow").click(function() {
+
       $('html, body').animate({
           scrollTop: $("#tecnicas").offset().top
-      }, 1000);
+      }, 500);
   });
 }
 

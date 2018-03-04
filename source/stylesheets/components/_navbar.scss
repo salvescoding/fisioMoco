@@ -9,6 +9,9 @@
   align-items: center;
   justify-content: space-between;
   z-index: 999;
+  @media screen and (max-width: $iphone4) {
+    padding: 0;
+  }
 }
 
 .navbar-wagon.nav-scroll {
@@ -51,9 +54,7 @@ a.navbar-wagon-brand {
 
     }
   }
-  @media screen and (max-width: $iphone4) {
-    margin-left: -15px;
-  }
+
 }
 
 .navbar-wagon-right {

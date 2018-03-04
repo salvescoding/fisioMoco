@@ -1,4 +1,6 @@
-
+body {
+  background: white;
+}
 
 .banner {
   color: white;
@@ -9,7 +11,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-attachment: fixed;
 }
 
 .home-content {
@@ -19,29 +20,12 @@
 .row {
   margin-right: 0px !important;
   margin-left: 0px !important;
-  background: white;
 }
 
 .container-tecnicas {
-  height: 100vh;
   width: 100vw;
+  position: relative;
 
-  h2 {
-    font-family: 'Tangerine', cursive;
-    font-size: 35px;
-    text-align: center;
-    color: #868474;
-  }
-  p {
-    color: #868474;
-    font-size: 16px;
-    font-family: lobster;
-    line-height: 1.78;
-    letter-spacing: -.003em;
-    @media screen and (max-width: $iphone4) {
-      font-size: 14px;
-    }
-  }
 }
 
 .tecnicas {
@@ -53,12 +37,34 @@
   transition: all 0.5s ease;
   &:hover {
     transform: scale(1.1);
+
+  }
+  @media screen and (max-width: $iphone4) {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    transform: scale(1.0);
+  }
+  h2 {
+    font-family: 'Tangerine', cursive;
+    font-size: 35px;
+    text-align: center;
+    color: $text-color;
+  }
+  p {
+    color: $text-color;
+    font-size: 16px;
+    font-family: lobster;
+    line-height: 1.78;
+    letter-spacing: -.003em;
+    @media screen and (max-width: $iphone4) {
+      font-size: 15px;
+    }
   }
 
 }
 
 .osteo-container {
-
   border-bottom: 0.5px solid lightgrey;
   border-right: 0.5px solid lightgrey;
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
@@ -67,20 +73,42 @@
 
 .fisio-container {
   margin-top: 0;
-  border-left: 0.5px solid lightgrey;
-  border-bottom: 0.5px solid lightgrey;
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-
-}
-
-.rpg-container {
-  margin-top: 0;
   border-bottom: 0.5px solid lightgrey;
   border-right: 0.5px solid lightgrey;
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
 }
 
-.images-container {
-  margin-top: 230px;
+
+.image-osteo {
+  margin-top: 250px;
+  @media screen and (max-width: $iphone4) {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
 }
+
+.image-fisio {
+  margin-top: 100px;
+  @media screen and (max-width: $iphone4) {
+    margin-top: 0;
+    display: block;
+    margin-top: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
 
