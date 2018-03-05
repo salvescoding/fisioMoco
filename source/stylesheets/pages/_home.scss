@@ -24,8 +24,7 @@ body {
 
 .container-tecnicas {
   width: 100vw;
-  position: relative;
-
+  height: auto;
 }
 
 .tecnicas {
@@ -33,7 +32,8 @@ body {
   background: white;
   width: 380px;
   padding: 15px;
-  margin: 150px 0;
+  margin-top: 150px;
+  margin-bottom: 75px;
   transition: all 0.5s ease;
   &:hover {
     transform: scale(1.1);
