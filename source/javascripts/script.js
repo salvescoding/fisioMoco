@@ -49,8 +49,8 @@ function menuBar() {
 }
 
 function smoothAnchor() {
-  $(".arrow").click(function() {
-
+  $(".arrow").click(function(e) {
+      e.preventDefault();
       $('html, body').animate({
           scrollTop: $("#tecnicas").offset().top
       }, 500);
