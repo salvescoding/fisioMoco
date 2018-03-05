@@ -28,7 +28,7 @@ body {
 }
 
 .tecnicas {
-  height: 500px;
+  height: auto;
   background: white;
   width: 380px;
   padding: 15px;
@@ -55,12 +55,12 @@ body {
   }
   p {
     color: $text-color;
-    font-size: 16px;
+    font-size: 14px;
     font-family: lobster;
     line-height: 1.78;
     letter-spacing: -.003em;
     @media screen and (max-width: $iphone4) {
-      font-size: 15px;
+      font-size: 14px;
     }
   }
 
@@ -83,6 +83,7 @@ body {
 
 .image-osteo {
   margin-top: 250px;
+  width: 50%;
   @media screen and (max-width: $iphone4) {
     display: block;
     text-align: center;

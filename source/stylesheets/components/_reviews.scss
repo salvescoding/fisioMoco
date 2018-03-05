@@ -27,16 +27,20 @@
    h4{
     font-family: $brand-font;
     text-align: center;
-    font-size: 29px;
+    font-size: 30px;
   }
   p {
-    font-size: 14px;
+    font-size: 12px;
     padding: 10px;
     line-height: 1.78em;
     @media screen and (max-width: $iphone4) {
       font-size: 12px;
     }
   }
+}
+
+.reviews-2 {
+  margin: 0;
 }
 
 .box-review-1, .box-review-2 {

@@ -53,7 +53,7 @@ function smoothAnchor() {
       e.preventDefault();
       $('html, body').animate({
           scrollTop: $("#tecnicas").offset().top
-      }, 500);
+      }, 1000);
   });
 }
 
