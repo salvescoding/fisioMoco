@@ -1,3 +1,7 @@
+body {
+  background: white;
+}
+
 .banner {
   color: white;
   text-align: center;
@@ -9,11 +13,104 @@
   justify-content: center;
 }
 
-.image-background img {
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-width: 100%;
-  width: auto;
+.home-content {
+  background-attachment: fixed;
+}
+
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+.container-tecnicas {
+  width: 100vw;
   height: auto;
 }
+
+.tecnicas {
+  height: 500px;
+  background: white;
+  width: 380px;
+  padding: 15px;
+  margin-top: 150px;
+  margin-bottom: 75px;
+  transition: all 0.5s ease;
+  &:hover {
+    transform: scale(1.1);
+    @media screen and (max-width: $iphone4) {
+      transform: scale(1.0);
+    }
+
+  }
+  @media screen and (max-width: $iphone4) {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  h2 {
+    font-family: 'Tangerine', cursive;
+    font-size: 35px;
+    text-align: center;
+    color: $text-color;
+  }
+  p {
+    color: $text-color;
+    font-size: 16px;
+    font-family: lobster;
+    line-height: 1.78;
+    letter-spacing: -.003em;
+    @media screen and (max-width: $iphone4) {
+      font-size: 15px;
+    }
+  }
+
+}
+
+.osteo-container {
+  border-bottom: 0.5px solid lightgrey;
+  border-right: 0.5px solid lightgrey;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+
+}
+
+.fisio-container {
+  margin-top: 0;
+  border-bottom: 0.5px solid lightgrey;
+  border-right: 0.5px solid lightgrey;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+}
+
+
+.image-osteo {
+  margin-top: 250px;
+  @media screen and (max-width: $iphone4) {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.image-fisio {
+  margin-top: 100px;
+  @media screen and (max-width: $iphone4) {
+    margin-top: 0;
+    display: block;
+    margin-top: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
 

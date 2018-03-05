@@ -1,10 +1,36 @@
+<!-- Homepage banner -->
+
 <div class="banner"  alt="Postura corpural" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path "health.jpg"%>);">
   <div class="home-content">
     <h1>FisioMoço</h1>
     <p>It is health that is real wealth and not pieces of gold and silver</p>
-     <h5>Mahatma Gandhi</h5>
+    <h5>Mahatma Gandhi</h5>
   </div>
+  <a href="#tecnicas">
+    <div class="arrow"></div>
+  </a>
 </div>
+
+<!-- Osteopatia section -->
+
+<%= partial "layouts/osteo-resume" %>
+
+
+<!-- Fisioterapia section  -->
+
+<%= partial "layouts/fisio-resume" %>
+
+
+
+<!-- RPG Section  -->
+
+<%= partial "layouts/rpg-resume" %>
+
+
+<!-- Reviews Section -->
+
+<%= partial "layouts/reviews" %>
+
+<!-- Footer Section  -->
+
 <%= partial "layouts/footer-home" %>
-
-

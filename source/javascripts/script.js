@@ -1,3 +1,5 @@
+
+
 // Select Contact informations
 
 function contactInfo() {
@@ -12,7 +14,6 @@ function selected() {
   const links = document.querySelectorAll('div.navbar-wagon-right > a');
   links.forEach(function(element){
     if(window.location.href.includes(element.pathname) === true) {
-      //console.log(element);
       element.classList.add("selected");
     }
   });
@@ -22,23 +23,54 @@ function selected() {
 function runScroll() {
   const nav = document.querySelector(".navbar-wagon");
 
-   if (document.body.scrollTop >= 240 || document.documentElement.scrollTop >= 240)  {
+   if (document.body.scrollTop >= 280 || document.documentElement.scrollTop >= 280)  {
      nav.classList.add("nav-scroll");
    } else {
      nav.classList.remove("nav-scroll");
    }
 }
 
+// Hidden menu bar
 
+function menuBar() {
+  const menu = document.getElementById("menu");
+  const overlay = document.getElementById("overlay");
 
+  if(overlay.style.width === "0%") {
+    overlay.style.width = "100%";
+    menu.innerText = "X";
+  }
+  else {
+    overlay.style.width = "0%";
+    menu.innerText = "Menu";
+  }
 
-function attachEvents() {
-  window.addEventListener("scroll", runScroll);
-  selected();
-  contactInfo();
+  menu.addEventListener("click", menuBar, false);
+}
+
+function smoothAnchor() {
+  $(".arrow").click(function() {
+
+      $('html, body').animate({
+          scrollTop: $("#tecnicas").offset().top
+      }, 500);
+  });
 }
 
 
 
-document.addEventListener("DOMContentLoaded", attachEvents);
+
+function attachEvents() {
+  window.addEventListener("scroll", runScroll, false);
+  selected();
+  contactInfo();
+  menuBar();
+  smoothAnchor();
+
+}
+
+
+
+
+document.addEventListener("DOMContentLoaded", attachEvents, false);
 
