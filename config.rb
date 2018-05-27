@@ -6,8 +6,6 @@ end
 
 activate :sprockets
 
-activate :i18n
-
 
 page '/*.xml', layout: false
 page '/*.json', layout: false
